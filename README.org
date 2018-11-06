@@ -1,0 +1,7 @@
+
+[[https://mediacenter.ibm.com/media/IBM+WebSphere+Application+Server+and+Docker/1_nih7dnus][IBM WebSphere Application Server and Docker]]
+[[https://developer.ibm.com/wasdev/blog/2016/06/15/websphere-traditional-ibm-http-server-docker-hub/
+][WebSphere traditional and IBM HTTP Server on Docker Hub]]
+[[https://hub.docker.com/r/ibmcom/websphere-traditional/][Official IBM WebSphere Application Server traditional for Developers image]]
+[[https://stackoverflow.com/questions/32948767/modify-name-space-bindings-using-wsadmin-jython][Modify name space bindings using wsadmin Jython]]
+https://www.techpaste.com/2011/07/jacl-modify-configuration-application/
