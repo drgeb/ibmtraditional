@@ -5,3 +5,13 @@
 [[https://hub.docker.com/r/ibmcom/websphere-traditional/][Official IBM WebSphere Application Server traditional for Developers image]]
 [[https://stackoverflow.com/questions/32948767/modify-name-space-bindings-using-wsadmin-jython][Modify name space bindings using wsadmin Jython]]
 https://www.techpaste.com/2011/07/jacl-modify-configuration-application/
+
+
+Why do people use Consul or other Service Discovery tool along with Kubernetes that already has this functionality built-it?
+https://www.quora.com/Why-do-people-use-Consul-or-other-Service-Discovery-tool-along-with-Kubernetes-that-already-has-this-functionality-built-it
+
+Running Consul on Kubernetes and Monitoring it With Prometheus
+https://www.weave.works/blog/running-consul-kubernetes-monitoring-prometheus/
+
+HashiCorp Fortifies Consul Service Mesh With Kubernetes Support
+https://www.sdxcentral.com/articles/news/hashicorp-fortifies-consul-service-mesh-with-kubernetes-support/2018/09/
