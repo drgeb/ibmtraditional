@@ -1,6 +1,15 @@
 import os
 execfile('wsadminlib.py')
 
+def dockercreateJAAS(cfg):
+    m = 'dockercreateJAAS:'
+    sop(m,'ready:')
+    auth_alias = "wassafety"
+    auth_username = "wassafety"
+    auth_password = "password"
+    createJAAS(auth_alias, auth_username, auth_password)
+    AdminConfig.save()
+    sop(m,"Exit success.")
 
 def dockerCreateStringNameSpaceBinding(cfg):
     m = 'dockerCreateStringNameSpaceBinding:'
@@ -9,15 +18,12 @@ def dockerCreateStringNameSpaceBinding(cfg):
     sop(m,'nodeName: '+ cfg["nodeName"])
     sop(m,'serverName: ' + cfg["serverName"])
     scope = cfg["serverID"]
-    sop(m,'ok0:')
 
     bindingName = 'TMO DWC3 - Demo'
     nameInNameSpace = 'tmo/param/dwcdemoclaim'
     stringToBind = '12345'
-    sop(m,"ok1")
     createStringNameSpaceBinding(scope, bindingName, nameInNameSpace, stringToBind)
 
-    sop(m,"ok2")
     bindingName = 'TMO Documents - convert Doc URL'
     nameInNameSpace = 'tmo/param/convertDocGetPacketUrl'
     stringToBind = 'http://webdeint7/ConvertDoc/GetPacket'
@@ -719,4 +725,5 @@ enableDebugMessages()
 cfg = {}
 sop(m,"Main.")
 testAndGetNamesBase(cfg)
+dockercreateJAAS(cfg)
 dockerCreateStringNameSpaceBinding(cfg)
